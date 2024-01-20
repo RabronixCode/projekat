@@ -1,0 +1,3 @@
+Unesite kod za popust: <input type="text" name="off" placeholder="OFF" #off><br>
+<button (click)="sendToCart(off)">CODE</button>
+<p *ngIf="newTotal !== 0">Ostvarili ste popust od {{offPercent}}% i vas novi racun je {{newTotal}}</p>

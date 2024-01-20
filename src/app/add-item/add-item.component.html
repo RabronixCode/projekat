@@ -1,0 +1,17 @@
+<form [formGroup]="addItemForm" (ngSubmit)="addItem()">
+
+    <label for="name">Name: </label>
+    <input id="name" type="text" formControlName="name" placeholder="Name">
+
+    <label for="description">Description: </label>
+    <textarea id="description" formControlName="description" placeholder="Description"></textarea>
+
+    <label for="price">Price: </label>
+    <input id="price" type="text" formControlName="price" placeholder="Price">
+
+    <label for="off">Off: </label>
+    <input id="off" type="number" formControlName="off" placeholder="Off" min="0" max="99" step="5">
+
+    <button type="submit" [disabled]="!addItemForm.valid">ADD ITEM</button>
+
+</form>

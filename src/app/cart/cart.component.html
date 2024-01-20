@@ -1,0 +1,18 @@
+<div>
+    
+        <span *ngFor="let c of cartList">
+            {{c.name}} ------- {{c.price}} ---- {{c.quantity}} ---- {{c.wholePrice}}
+            <button (click)="add(c)">+</button>
+            <button (click)="subtract(c)">-</button>
+            <button (click)="delete(c)">X</button>
+            <br>
+        </span>
+        <span>{{totalPrice}}</span>
+        <app-off [newTotal]="newTotal" (code)="fromOff($event)"></app-off>
+        
+    <form>
+        
+        
+        <button type="submit" (click)="refresh()">AAAA</button>
+    </form>
+</div>

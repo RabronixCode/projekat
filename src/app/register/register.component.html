@@ -1,0 +1,20 @@
+<form [formGroup]="registerForm" (ngSubmit)="register()">
+
+    <label for="name">Name: </label>
+    <input id="name" type="text" formControlName="name" placeholder="Name">
+
+    <label for="email">Email: </label>
+    <input id="email" type="text" formControlName="email" placeholder="Email">
+
+    <label for="username">Username: </label>
+    <input id="username" type="text" formControlName="username" placeholder="Username">
+
+    <label for="password">Password: </label>
+    <input id="password" type="text" formControlName="password" placeholder="Password">
+
+    <label for="age">Age: </label>
+    <input id="age" type="number" formControlName="age" placeholder="Age">
+
+    <button type="submit" [disabled]="!registerForm.valid">LOG IN</button>
+
+</form>

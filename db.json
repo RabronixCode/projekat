@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Marko Rab",
+      "email": "marko@gmail.com",
+      "username": "marko",
+      "password": "marko",
+      "age": 22
+    },
+    {
+      "id": 2,
+      "name": "admin",
+      "email": "admin@admin.com",
+      "username": "admin",
+      "password": "Admin123!",
+      "age": 23
+    }
+  ],
+  "items": [
+    {
+      "id": 2,
+      "name": "Ekser",
+      "description": "dobar ekser",
+      "price": 3333,
+      "off": 0
+    },
+    {
+      "id": 3,
+      "name": "Smirgla",
+      "description": "Jaka tvrda smirgla",
+      "price": 123,
+      "off": 25
+    }
+  ]
+}

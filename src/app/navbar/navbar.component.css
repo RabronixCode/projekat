@@ -1,0 +1,42 @@
+nav {
+  background-color: #3498db; /* Set your desired background color */
+  padding: 0;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  margin: 0; /* Remove margin on the left and right */
+  margin-left: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: #2ecc71 ;
+}
+
+#right {
+    float: right;
+}
+
+#cart-icon {
+    width: 14px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}

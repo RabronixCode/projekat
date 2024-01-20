@@ -1,0 +1,9 @@
+<div class="items">
+    <span *ngFor="let item of items">{{item.name}} -> {{item.price}} din.
+    <form>
+        New price: <input type="text" name="newPrice" placeholder="New price" #newPrice>
+        <button (click)="changePrice(item, newPrice)">Obrisi</button>
+    </form>
+
+</span>
+</div>

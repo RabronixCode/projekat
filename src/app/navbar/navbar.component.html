@@ -1,0 +1,32 @@
+<nav class="navbar" *ngIf="loggedInUser == false && loggedInAdmin == false">
+    <ul>
+        <li><a routerLink="/login">Pocetna</a></li>
+        <li><a routerLink="/shop">Prodavnica</a></li>
+        <li><a routerLink="/login">O nama</a></li>
+        <li><a routerLink="/login">Kontakt</a></li>
+        <li id="right"><a routerLink="/register">Registruj se</a></li>
+        <li id="right"><a routerLink="/login">Log in</a></li>
+    </ul>
+</nav>
+
+
+<nav class="navbar" *ngIf="loggedInUser == true">
+    <ul>
+        <li><a routerLink="/login">Pocetna</a></li>
+        <li><a routerLink="/shop">Prodavnica</a></li>
+        <li><a routerLink="/login">O nama</a></li>
+        <li><a routerLink="/login">Kontakt</a></li>
+        <li id="right"><a routerLink="/" (click)="logout()">Log out</a></li>
+        <li id="right"><a routerLink="/cart"><img src="../../assets/cart2.png" id="cart-icon"></a></li>
+    </ul>
+</nav>
+
+
+<nav class="navbar" *ngIf="loggedInAdmin == true">
+    <ul>
+        <li><a routerLink="/add-item">Dodaj proizvod</a></li>
+        <li><a routerLink="/delete-item">Obrisi proizvod</a></li>
+        <li><a routerLink="/change-price">Promeni cenu proizvoda</a></li>
+        <li id="right"><a routerLink="/" (click)="logout()">Log out</a></li>
+    </ul>
+</nav>
